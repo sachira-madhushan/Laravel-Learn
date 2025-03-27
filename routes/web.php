@@ -7,5 +7,11 @@ Route::get('/welcome', function () {
 });
 
 Route::get("/home",function(){
-    return view('home.home');
+
+    $heros=[
+        ["name"=>"mario","skill"=>75],
+        ["name"=>"ben10","skill"=>80]
+    ];
+
+    return view('home.home',["greeting"=>"hello","heros"=>$heros]);
 });

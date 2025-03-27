@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Home</h1>
+    <p>{{$greeting}}</p>
+    <p>{{$heros[0]["name"]}}</p>
+    <p>{{$heros[1]["name"]}}</p>
     <a href="/welcome">Click here</a>
 </body>
 </html>
