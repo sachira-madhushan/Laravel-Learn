@@ -1,14 +1,16 @@
 <x-layout>
-    <h1>Home</h1>
-    <p>{{$greeting}}</p>
+    {{-- <h1>Home</h1>
+    <p>{{$greeting}}</p> --}}
 
     @foreach ($heros as $hero)
-            <p>{{$hero['name']." ".$hero['skill']}}</p>
+            <x-card href="hero/{{$hero['id']}}">
+                <h3>{{$hero['name']}}</h3>
+            </x-card>
     @endforeach
 
-    @if ($greeting=="hello")
+    {{-- @if ($greeting=="hello")
         <p>If condition is true</p>
     @endif
-    <a href="/welcome">Click here</a>
+    <a href="/welcome">Click here</a> --}}
 
 </x-layout>

@@ -9,8 +9,8 @@ Route::get('/welcome', function () {
 Route::get("/home",function(){
 
     $heros=[
-        ["name"=>"mario","skill"=>75],
-        ["name"=>"ben10","skill"=>80]
+        ["id"=>0,"name"=>"mario","skill"=>75],
+        ["id"=>1,"name"=>"ben10","skill"=>80]
     ];
 
     return view('home.home',["greeting"=>"hello","heros"=>$heros]);
