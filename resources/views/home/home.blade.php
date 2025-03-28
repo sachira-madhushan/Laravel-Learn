@@ -12,5 +12,5 @@
         <p>If condition is true</p>
     @endif
     <a href="/welcome">Click here</a> --}}
-
+    {{$heros->links()}}
 </x-layout>

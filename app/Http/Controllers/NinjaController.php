@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class NinjaController extends Controller
 {
     public function index(){
-        $ninjas=Ninja::all();
+        $ninjas=Ninja::paginate(10);
         return view('home.home',['heros'=>$ninjas]);
     }
 }
