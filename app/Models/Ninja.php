@@ -10,4 +10,8 @@ class Ninja extends Model
     protected $fillable =['name','skill','bio'];
     /** @use HasFactory<\Database\Factories\NinjaFactory> */
     use HasFactory;
+
+    public function dogo(){
+        return $this->belongsTo(Dogo::class);
+    }
 }

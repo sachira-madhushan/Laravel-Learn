@@ -10,4 +10,8 @@ class Dogo extends Model
     protected $fillable =['name','description','location'];
     /** @use HasFactory<\Database\Factories\DogoFactory> */
     use HasFactory;
+
+    public function ninjas(){
+        return $this->hasMany(Ninja::class);
+    }
 }

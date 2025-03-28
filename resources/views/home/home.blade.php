@@ -5,6 +5,7 @@
     @foreach ($heros as $hero)
             <x-card href="hero/{{$hero['id']}}">
                 <h3>{{$hero['name']}}</h3>
+                <h3>Dojo :{{$hero->dogo->name}}</h3>
             </x-card>
     @endforeach
 
